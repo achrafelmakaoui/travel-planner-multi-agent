@@ -30,13 +30,11 @@ st.caption("Powered by LangGraph, Groq, and Agentic RAG")
 
 # === Session state initialization ===
 if "thread_id" not in st.session_state:
-    st.session_state.thread_id = "session-1"
+    st.session_state.thread_id = str(uuid.uuid4())  # unique per session
 if "stage" not in st.session_state:
     st.session_state.stage = "input"
 if "interrupt_data" not in st.session_state:
     st.session_state.interrupt_data = None
-if "final_state" not in st.session_state:
-    st.session_state.final_state = None
 
 
 def get_config():
@@ -147,9 +145,9 @@ elif st.session_state.stage == "done":
                 st.success("Booking approved (simulated)")
             else:
                 st.warning("Booking was not approved")
-
+    
     if st.button("Plan another trip"):
         st.session_state.clear()
+        st.session_state.thread_id = str(uuid.uuid4())
+        st.session_state.stage = "input"
         st.rerun()
-    
-
