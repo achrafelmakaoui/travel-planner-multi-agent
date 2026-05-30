@@ -1,7 +1,7 @@
 {
-  "prompt_A_avg": 0.86,
-  "prompt_B_avg": 0.86,
-  "winner": "A",
+  "prompt_A_avg": 0.81,
+  "prompt_B_avg": 0.91,
+  "winner": "B",
   "details": {
     "prompt_A": [
       {
@@ -9,21 +9,21 @@
         "keyword_score": 0.8,
         "mention_score": 1.0,
         "overall": 0.88,
-        "output_length": 2748
+        "output_length": 3003
       },
       {
         "test": "r2",
         "keyword_score": 0.75,
         "mention_score": 1.0,
         "overall": 0.85,
-        "output_length": 3368
+        "output_length": 2696
       },
       {
         "test": "r3",
-        "keyword_score": 0.75,
+        "keyword_score": 0.5,
         "mention_score": 1.0,
-        "overall": 0.85,
-        "output_length": 2448
+        "overall": 0.7,
+        "output_length": 2802
       }
     ],
     "prompt_B": [
@@ -32,21 +32,21 @@
         "keyword_score": 0.8,
         "mention_score": 1.0,
         "overall": 0.88,
-        "output_length": 3882
+        "output_length": 3858
       },
       {
         "test": "r2",
         "keyword_score": 1.0,
         "mention_score": 1.0,
         "overall": 1.0,
-        "output_length": 3483
+        "output_length": 2793
       },
       {
         "test": "r3",
-        "keyword_score": 0.5,
+        "keyword_score": 0.75,
         "mention_score": 1.0,
-        "overall": 0.7,
-        "output_length": 3108
+        "overall": 0.85,
+        "output_length": 3330
       }
     ]
   }

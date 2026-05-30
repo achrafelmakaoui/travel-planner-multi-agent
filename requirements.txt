@@ -12,3 +12,6 @@ python-dotenv
 pydantic
 torch
 torchvision
+fastapi
+uvicorn[standard]
+sse-starlette
